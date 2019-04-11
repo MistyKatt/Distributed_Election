@@ -3,19 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package davis.networks;
 
-package davis.nodes;
+import davis.networks.Ring;
+import jbotsim.Link;
 
-/**
- *
- * @author giuseppe
- */
-public class DummyPort extends PortNode{
-
-    @Override
-    public void init() {
-        System.out.println("Doing Nothing!");
-    
+public class BidirRing
+extends Ring {
+    public BidirRing() {
+        this.type = Link.Type.UNDIRECTED;
     }
-    
 }
